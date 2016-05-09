@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="cash.css">
     <script type="javascript">
         document.onload(function(){
-            $(".intro").fadeOut();
+            $("#uno").fadeOut();
+            setTimeout(function(){
+                document.getElementById("dos").hide();
+            }, 2500);
+            alert("show me the money!");
         })
     </script>
 </head>
-<div class="intro">
+<div class="intro" id="uno">
     <p>Hey Cash!</p>
+    <p id="dos"></p>
 </div>
 <body>
 </body>
