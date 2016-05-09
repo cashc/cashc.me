@@ -2,8 +2,13 @@ body{
     background-color: lightgray;
 }
 .intro{
-    padding-top: calc(45vh);
+    padding-top: calc(20vh);
     text-align: center;
     color: white;
     font-size: calc(10vh);
+}
+
+.intro > #welcome {
+    color: darkslategrey;
+    font-size: calc(5vh);
 }
