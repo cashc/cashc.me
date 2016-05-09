@@ -5,14 +5,12 @@
     <title>Cash $ Compton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cash.css">
-    <script type="text/javascript">
-        document.onload(function(){
-            $("#uno").fadeOut();
-            setTimeout(function(){
-                document.getElementById("dos").hide();
-            }, 2500);
-            alert("show me the money!");
-        })
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="lib/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            new Cash();
+        });
     </script>
 </head>
 <div class="intro" id="uno">
