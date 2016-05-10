@@ -20,7 +20,7 @@ nav {
 
 nav ul {
     float: right;
-    display: block;
+    display: inline-block;
     list-style: none;
     box-sizing: content-box;
     list-style-position: outside;
@@ -44,21 +44,17 @@ nav #compton {
 }
 
 nav #about {
-    background-color: darkorange;
-    color: dodgerblue;
+    color: lightsteelblue;
 }
 
 nav #resume {
-    background-color: dodgerblue;
-    color: darkorange;
+    color: lightsteelblue;
 }
 
 nav #contact {
-    background-color: darkorange;
-    color: dodgerblue;
+    color: lightsteelblue;
 }
 
 nav #extras {
-    background-color: dodgerblue;
-    color: darkorange;
+    color: lightsteelblue;
 }
