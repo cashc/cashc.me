@@ -1,5 +1,5 @@
 body{
-    background-color: darkslategrey;
+    background-color: #292c36;
 }
 .intro{
     padding-top: calc(20vh);
@@ -9,7 +9,7 @@ body{
 }
 
 .intro > #welcome {
-    color: lightgray;
+    color: white;
     font-size: calc(5vh);
 }
 
