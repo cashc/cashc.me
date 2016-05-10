@@ -13,10 +13,15 @@ body{
     font-size: calc(5vh);
 }
 
+nav {
+    padding-top: 8px;
+}
+
 nav ul {
     float: right;
     display: block;
-    padding-top: 8px;
+    list-style: none;
+    box-sizing: content-box;
 }
 
 nav #home {
