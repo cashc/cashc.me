@@ -24,6 +24,7 @@ nav ul {
     list-style: none;
     box-sizing: content-box;
     list-style-position: outside;
+    padding: 16px 0 0 16px;
 }
 
 nav li {
