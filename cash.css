@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: darkslategrey;
 }
 .intro{
     padding-top: calc(20vh);
@@ -9,6 +9,44 @@ body{
 }
 
 .intro > #welcome {
-    color: darkslategrey;
+    color: lightgray;
     font-size: calc(5vh);
+}
+
+nav ul {
+    float: right;
+    display: block;
+    padding-top: 8px;
+}
+
+nav #home {
+    float: left;
+}
+
+nav #cash {
+    color: royalblue;
+}
+
+nav #compton {
+    color: darkorange;
+}
+
+nav #about {
+    background-color: darkorange;
+    color: royalblue;
+}
+
+nav #resume {
+    background-color: royalblue;
+    color: darkorange;
+}
+
+nav #contact {
+    background-color: darkorange;
+    color: royalblue;
+}
+
+nav #extras {
+    background-color: royalblue;
+    color: darkorange;
 }
