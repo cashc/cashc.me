@@ -23,6 +23,11 @@ nav ul {
     display: block;
     list-style: none;
     box-sizing: content-box;
+
+}
+
+nav li {
+    padding-left: 24px;
 }
 
 nav #home {
@@ -31,7 +36,7 @@ nav #home {
 }
 
 nav #cash {
-    color: royalblue;
+    color: dodgerblue;
 }
 
 nav #compton {
@@ -40,20 +45,20 @@ nav #compton {
 
 nav #about {
     background-color: darkorange;
-    color: royalblue;
+    color: dodgerblue;
 }
 
 nav #resume {
-    background-color: royalblue;
+    background-color: dodgerblue;
     color: darkorange;
 }
 
 nav #contact {
     background-color: darkorange;
-    color: royalblue;
+    color: dodgerblue;
 }
 
 nav #extras {
-    background-color: royalblue;
+    background-color: dodgerblue;
     color: darkorange;
 }
