@@ -1,0 +1,71 @@
+body{
+    background-color: #272822;
+}
+.intro{
+    padding-top: calc(16vh);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: calc(10vh);
+}
+
+.intro > #welcome {
+    color: #FFFFFF;
+    font-size: calc(4vh);
+}
+
+nav {
+    font-size: 16px;
+    border-bottom: solid;
+    border-bottom-width: .4px;
+    border-bottom-color: #F92672;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0 16px 0 16px;
+}
+
+nav #home {
+    font-size: 28px;
+    float: left;
+}
+
+nav #cash {
+    color: #455cff;
+}
+
+nav #compton {
+    color: #fd971f;
+}
+
+nav #about {
+    color: #A6E22E;
+}
+
+nav #resume {
+    color: #66D9EF;
+}
+
+nav #contact {
+    color: #E6DB74;
+}
+
+nav #extras {
+    color: #AE81FF;
+}
