@@ -3,6 +3,7 @@ header, footer, body {
 }
 
 nav {
+    background-color: rgba(115, 129, 125, 0);
     font-size: 16px;
     border-bottom: solid;
     border-bottom-width: .4px;
@@ -10,7 +11,17 @@ nav {
 }
 
 nav a{
+    background-color: rgba(115, 129, 125, 0.45);
+    border-right-style: solid;
+    border-color: grey;
+    border-right-width: .01px;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    background-color: #272822;
 }
 
 nav a:hover {
@@ -21,7 +32,7 @@ nav a:hover {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0 10px 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -32,12 +43,20 @@ nav li {
 nav li a {
     display: block;
     text-align: center;
-    padding: 0 16px 0 16px;
+    padding: 10px 16px 8px 16px;
 }
 
 nav #home {
     font-size: 28px;
     float: left;
+    border-right-style: none;
+    margin: 0;
+    padding: 2px 0 0 0;
+}
+
+nav #house {
+    width: 26px;
+    height: 26px;
 }
 
 nav #cash {
@@ -49,6 +68,9 @@ nav #compton {
 }
 
 nav #about {
+    border-left-style: solid;
+    border-color: grey;
+    border-left-width: .01px;
     color: #A6E22E;
 }
 
@@ -66,6 +88,8 @@ nav #extras {
 
 body{
     background-color: #272822;
+    margin: 0;
+    padding: 0;
 }
 
 .intro{
