@@ -1,16 +1,5 @@
-body{
-    background-color: #272822;
-}
-.intro{
-    padding-top: calc(16vh);
-    text-align: center;
-    color: #FFFFFF;
-    font-size: calc(10vh);
-}
-
-.intro > #welcome {
-    color: #FFFFFF;
-    font-size: calc(4vh);
+header, footer, body {
+    font-family: "monospace";
 }
 
 nav {
@@ -20,8 +9,13 @@ nav {
     border-bottom-color: #F92672;
 }
 
-nav a {
+nav a{
     text-decoration: none;
+}
+
+nav a:hover {
+    opacity: .75;
+    color: #73817D;
 }
 
 nav ul {
@@ -68,4 +62,32 @@ nav #contact {
 
 nav #extras {
     color: #AE81FF;
+}
+
+body{
+    background-color: #272822;
+}
+
+.intro{
+    padding-top: calc(16vh);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: calc(10vh);
+}
+
+.intro > #welcome {
+    color: #FFFFFF;
+    font-size: calc(4vh);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%
+}
+
+.comment {
+    font-size: 12px;
+    color: #75715e;
 }
