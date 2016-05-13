@@ -133,14 +133,27 @@ body{
     overflow: hidden;
 }
 
-.info{
+.info {
     color: #FFFFFF;
     padding: 16px 32px 16px 32px;
     width: calc(95vw - 48px);
 }
 
-.info a, p {
+.info a, .info p {
     padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+.left {
+    display: table-cell;
+    color: #FFFFFF;
+    padding: 16px 32px 16px 32px;
+    max-width: calc(42vw - 24px);
+    width: auto;
+}
+
+
+.left a, .left p {
     text-decoration: none;
 }
 
