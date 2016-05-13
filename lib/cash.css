@@ -24,6 +24,10 @@ nav a{
     background-color: #272822;
 }
 
+.selected1 {
+    background-color: #4b4b4b;
+}
+
 nav a:hover {
     opacity: .75;
     color: #73817D;
@@ -115,7 +119,7 @@ body{
 
 #overlay {
     position: absolute;
-    top: 120px;
+    top: 7vw;
     left: 0;
     width: 100%;
 }
@@ -128,9 +132,9 @@ body{
 }
 
 .info{
-    text-align: center;
     color: #FFFFFF;
     padding: 16px 32px 16px 32px;
+    width: 70vw;
 }
 
 .info a {
