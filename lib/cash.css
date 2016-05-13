@@ -1,10 +1,15 @@
 header, footer, body {
-    font-family: "monospace";
+    font-family: Ubuntu;
+}
+
+.root {
+    font-size: 28px;
+    color: #75715e;
 }
 
 nav {
     background-color: rgba(115, 129, 125, 0);
-    font-size: 16px;
+    font-size: 17px;
     border-bottom: solid;
     border-bottom-width: 1px;
     border-bottom-color: #F92672;
@@ -74,7 +79,7 @@ nav #compton {
 nav #about {
     border-left-style: solid;
     border-color: grey;
-    border-left-width: .01px;
+    border-left-width: .1px;
 }
 
 .green {
@@ -95,6 +100,11 @@ nav #about {
 
 .pink {
     color: #F92672;
+}
+
+.white {
+    font-size: 28px;
+    color: #FFFFFF;
 }
 
 body{
@@ -158,7 +168,7 @@ body{
 }
 
 .bold {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bold1{
@@ -167,13 +177,13 @@ body{
 
 .bold2 {
     color: rgba(255, 255, 255, .9);
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .resume {
     list-style-type: none;
     font-family: "Arial";
-    font-size: 16px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -192,6 +202,6 @@ footer {
 }
 
 .comment {
-    font-size: 12px;
+    font-size: 14px;
     color: #75715e;
 }
