@@ -128,7 +128,7 @@ body{
 #fjord {
     position: relative;
     max-width: 2304px;
-    width: 99.3vw;
+    width: 99vw;
     height: calc(100vw/5.01);
     overflow: hidden;
 }
