@@ -9,7 +9,7 @@
     <script src="lib/main.js"></script>
     <script>
         $(document).ready(function() {
-            new Cash();
+            new About();
         });
     </script>
 </head>
@@ -22,27 +22,37 @@
         </a>
         <ul>
             <li>
-                <a id="extras" href="extras.html">extras()</a>
+                <a class="purple" href="extras.html">extras()</a>
             </li>
             <li>
-                <a id="contact" href="contact.html">contact()</a>
+                <a class="yellow" href="contact.html">contact()</a>
             </li>
             <li>
-                <a id="resume" href="resume.html">résumé()</a>
+                <a class="blue" href="resume.html">résumé()</a>
             </li>
-            <li>
-                <a class="selected" id="about" href="about.html">about()</a>
+            <li class="selected">
+                <a id="about" class="green" href="about.html">about()</a>
             </li>
         </ul>
     </nav>
 </header>
-<div class="intro">
-    <p id="hello">About</p>
-    <p id="welcome">Who is Cash Compton?</p>
-</div>
 <body>
+<div class="welcome">
+    <img id="fjord" src="content/cashFjord-small.jpg" alt="Cash in Norway"/>
+    <p id="overlay">Who is Cash Compton?</p>
+</div>
+<div class="info">
+    <p>In my free time I enjoy being active. I usually go for a run 6 days a week. My biggest passion is soccer so I
+        spend a lot of time playing and watching. To relax I like taking naps and watching Netflix.</p>
+    <p><a class="yellow" href="">Hobbies()</a></p>
+    <p id="hobbies">Running.</p>
+    <p><a class="pink" href="">Assets()</a></p>
+    <p id="assets">Motorcycle, car, bicycle.</p>
+    <p><a class="blue" href="">Favorites()</a></p>
+    <p id="favorites">JetBrains is the shit.</p>
+</div>
 </body>
 <footer>
-    <p class="comment">/*This is a work in progress...*/</p>
+    <p class="comment">/*This website was designed and developed by me, Cash. © 2016*/</p>
 </footer>
 </html>

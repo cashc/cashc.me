@@ -51,7 +51,7 @@ nav #home {
     float: left;
     border-right-style: none;
     margin: 0;
-    padding: 2px 0 0 0;
+    padding: 2px 0 0 8px;
 }
 
 nav #house {
@@ -71,19 +71,26 @@ nav #about {
     border-left-style: solid;
     border-color: grey;
     border-left-width: .01px;
+}
+
+.green {
     color: #A6E22E;
 }
 
-nav #resume {
+.blue {
     color: #66D9EF;
 }
 
-nav #contact {
+.yellow {
     color: #E6DB74;
 }
 
-nav #extras {
+.purple {
     color: #AE81FF;
+}
+
+.pink {
+    color: #F92672;
 }
 
 body{
@@ -99,9 +106,37 @@ body{
     font-size: calc(10vh);
 }
 
-.intro > #welcome {
+.welcome {
+    position: relative;
+    text-align: center;
     color: #FFFFFF;
     font-size: calc(4vh);
+}
+
+#overlay {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+}
+
+#fjord {
+    position: relative;
+    max-width: 2304px;
+    width: 100vw;
+    height: calc(100vw/5.01);
+}
+
+.info{
+    text-align: center;
+    color: #FFFFFF;
+    padding: 16px 32px 16px 32px;
+}
+
+.info a {
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+
 }
 
 footer {
