@@ -104,7 +104,7 @@ body{
 }
 
 .intro {
-    padding-top: calc(16vh);
+    padding-top: calc(8vh);
     text-align: center;
     color: #FFFFFF;
     font-size: calc(10vh);
