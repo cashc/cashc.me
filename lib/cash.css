@@ -103,7 +103,7 @@ body{
     padding: 0;
 }
 
-.intro{
+.intro {
     padding-top: calc(16vh);
     text-align: center;
     color: #FFFFFF;
@@ -119,35 +119,63 @@ body{
 
 #overlay {
     position: absolute;
-    top: 7vw;
+    top: 5vw;
     left: 0;
-    width: 100%;
+    width: 90vw;
+    overflow: hidden;
 }
 
 #fjord {
     position: relative;
     max-width: 2304px;
-    width: 100vw;
+    width: 99.3vw;
     height: calc(100vw/5.01);
+    overflow: hidden;
 }
 
 .info{
     color: #FFFFFF;
     padding: 16px 32px 16px 32px;
-    width: 90vw;
+    width: calc(95vw - 48px);
 }
 
-.info a {
+.info a, p {
     padding: 8px 0 8px 16px;
     text-decoration: none;
+}
 
+.bold {
+    font-size: 18px;
+}
+
+.bold1{
+    color: rgba(255, 255, 255, .9);
+}
+
+.bold2 {
+    color: rgba(255, 255, 255, .9);
+    font-size: 14px;
+}
+
+.resume {
+    list-style-type: none;
+    font-family: "Arial";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.resume li {
+    padding-bottom: 8px;
+}
+
+.skills td, tr {
+    padding: 2px 64px 2px 64px;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     text-align: center;
-    width: 100%
+    width: 99%;
 }
 
 .comment {
