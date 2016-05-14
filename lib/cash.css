@@ -127,19 +127,31 @@ body{
     font-size: calc(4vh);
 }
 
+#expand {
+    font-size: 20px;
+    color: #FFFFFF;
+    border-color: #75715e;
+}
+
 #overlay {
     position: absolute;
     top: 5vw;
-    left: 0;
+    right: 22vw;
     width: 90vw;
     overflow: hidden;
 }
 
 #fjord {
     position: relative;
-    max-width: 2304px;
     width: 99vw;
-    height: calc(100vw/5.01);
+    height: calc(99vw/5.01);
+    overflow: hidden;
+}
+
+#lab {
+    position: relative;
+    width: 99vw;
+    height: calc(99vw/3.53);
     overflow: hidden;
 }
 
@@ -196,7 +208,7 @@ body{
 }
 
 .skills td, tr {
-    padding: 2px 4vw 2px 4vw;
+    padding: 2px 7vw 2px 7vw;
 }
 
 footer {
