@@ -191,8 +191,12 @@ body{
     padding-bottom: 8px;
 }
 
+.skills {
+    max-width: 99vw;
+}
+
 .skills td, tr {
-    padding: 2px 64px 2px 64px;
+    padding: 2px 4vw 2px 4vw;
 }
 
 footer {
