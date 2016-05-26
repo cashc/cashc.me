@@ -127,6 +127,11 @@ body{
     font-size: calc(4vh);
 }
 
+.welcome a {
+    padding: 8px 0 8px 16px;
+    font-size: 22px;
+}
+
 #expand {
     font-size: 20px;
     color: #FFFFFF;
