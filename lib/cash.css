@@ -117,14 +117,14 @@ body{
     padding-top: calc(8vh);
     text-align: center;
     color: #FFFFFF;
-    font-size: calc(10vh);
+    font-size: calc(8vh + 24px);
 }
 
 .welcome {
     position: relative;
     text-align: center;
     color: #FFFFFF;
-    font-size: calc(4vh);
+    font-size: calc(2vh + 20px);
 }
 
 .welcome a {
