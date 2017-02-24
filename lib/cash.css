@@ -139,19 +139,19 @@ nav #about {
 }
 
 .selectedGreen {
-    background: linear-gradient(to top, rgba(166,226,46,.4), #272822);
+    background: linear-gradient(to top, rgba(166,226,46,.5), #272822);
 }
 
 .selectedBlue {
-    background: linear-gradient(to top, rgba(102,217,238,.4), #272822);
+    background: linear-gradient(to top, rgba(102,217,238,.5), #272822);
 }
 
 .selectedYellow {
-    background: linear-gradient(to top, rgba(231,219,116,.4), #272822);
+    background: linear-gradient(to top, rgba(231,219,116,.5), #272822);
 }
 
 .selectedPurple {
-    background: linear-gradient(to top, rgba(174,129,255,.4), #272822);
+    background: linear-gradient(to top, rgba(174,129,255,.5), #272822);
 }
 
 body{
