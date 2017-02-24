@@ -8,6 +8,7 @@
     <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan.">
     <meta name="keywords" content="Cash,Compton,michigan,state,university,msu,software,engineer,developer">
     <link rel="stylesheet" href="lib/cash.css">
+    <link rel="shortcut icon" href="content/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="lib/main.js"></script>
@@ -20,12 +21,10 @@
 </head>
 <header>
     <nav role="navigation">
-        <a class="selected" id="home" href="./">
-            <span id="cash">Cash</span>
-            <span id="compton">Compton</span>
-            <span class="root"> ~/</span>
+        <a id="home" href="./">
+            <span id="root">Cash Compton ~/</span>
         </a>
-        <ul>
+        <ul id="myTopnav" class="topnav">
             <li>
                 <a class="purple" href="extras">extras()</a>
             </li>
@@ -37,6 +36,11 @@
             </li>
             <li>
                 <a id="about" class="green" href="about">about()</a>
+            </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="mobileFriendly()">
+                    <img id="menu" src="content/white-menu-icon.png" alt="menu icon">
+                </a>
             </li>
         </ul>
     </nav>

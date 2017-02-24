@@ -2,13 +2,46 @@ header, footer, body {
     font-family: Ubuntu;
 }
 
-.root {
-    font-size: 28px;
-    color: #75715e;
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+    ul.topnav li {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+li.icon{
+    color: white;
+    background-color: #131411;
+}
+
+img#menu {
+    width: 20px;
+    height: 20px;
 }
 
 nav {
-    background-color: rgba(115, 129, 125, 0);
+    background-color: #131411;
     font-size: 17px;
     border-bottom: solid;
     border-bottom-width: 1px;
@@ -37,21 +70,22 @@ nav a:hover {
     opacity: .75;
 }
 
-nav ul {
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-nav li {
+ul.topnav li {
     float: right;
 }
 
-nav li a {
+ul.topnav li a {
     display: block;
     text-align: center;
     padding: 10px 16px 8px 16px;
+    transition: 0.3s;
 }
 
 nav #home {
@@ -60,6 +94,13 @@ nav #home {
     border-right-style: none;
     margin: 0;
     padding: 2px 0 0 8px;
+    color: white;
+    background-color: #131411;
+}
+
+nav #root {
+    color: #a8a8a8;
+    font-size: 28px;
 }
 
 nav #house {
@@ -67,13 +108,9 @@ nav #house {
     height: 26px;
 }
 
-nav #cash {
-    color: #455cff;
-}
-
-nav #compton {
-    color: #fd971f;
-}
+/*nav #cash {*/
+    /*color: white;*/
+/*}*/
 
 nav #about {
     border-left-style: solid;
@@ -101,9 +138,20 @@ nav #about {
     color: #F92672;
 }
 
-.white {
-    font-size: 28px;
-    color: #FFFFFF;
+.selectedGreen {
+    background: linear-gradient(to top, rgba(166,226,46,.4), #272822);
+}
+
+.selectedBlue {
+    background: linear-gradient(to top, rgba(102,217,238,.4), #272822);
+}
+
+.selectedYellow {
+    background: linear-gradient(to top, rgba(231,219,116,.4), #272822);
+}
+
+.selectedPurple {
+    background: linear-gradient(to top, rgba(174,129,255,.4), #272822);
 }
 
 body{
@@ -183,6 +231,19 @@ body{
     text-decoration: none;
 }
 
+ul.extras {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 15px 30px 10px;
+    overflow: hidden;
+}
+
+ul.extras li {
+    color: white;
+    padding: 0 20px 0 10px;
+    float: left;
+}
+
 .bold {
     font-size: 20px;
 }
@@ -212,7 +273,7 @@ body{
 }
 
 .skills td, tr {
-    padding: 2px 7vw 2px 7vw;
+    padding: 2px 4vw 2px 4vw;
 }
 
 footer {
