@@ -2,7 +2,6 @@ header, footer, body {
     font-family: Ubuntu;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
 
 @media screen and (max-width:680px) {
@@ -257,6 +256,24 @@ ul.extras li {
     font-size: 18px;
 }
 
+.pdf, a {
+    padding: 20px 0 0 0;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#pdf img {
+    width: 75px;
+    height: 75px;
+    border: 0;
+}
+
+#pdfSmall img {
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
 .resume {
     list-style-type: none;
     font-family: "Arial";
@@ -272,7 +289,7 @@ ul.extras li {
     max-width: 99vw;
 }
 
-.skills td, tr {
+.skills table, td, tr {
     padding: 2px 4vw 2px 4vw;
 }
 
