@@ -179,9 +179,14 @@ body{
 }
 
 #expand {
-    font-size: 20px;
+    font-size: 22px;
     color: #FFFFFF;
     border-color: #75715e;
+}
+
+.pdf #expand {
+    font-size: 34px;
+    padding: none;
 }
 
 #overlay {
