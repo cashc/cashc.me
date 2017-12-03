@@ -11,16 +11,41 @@
     for writing.">
     <meta name="keywords" content="Cash,Compton,blog,michigan,state,university,msu,software,engineer,developer">
     <link rel="stylesheet" href="/lib/cash.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="/lib/main.js"></script>
     <script>
-        $(document).ready(function() {
-            analytics();
-            welcomeFadeIn();
-            getMarkdownHtml();
-        });
+      const files = [
+        'wish-list.md',
+      ];
+      const URL = 'https://api.github.com/markdown/raw';
+      const TYPE = 'POST';
+      const CONTENT_TYPE = 'text/plain';
+
+      const success = (markdownHtml) => {
+        const currentHtml = $('.blog-list').html();
+        const newHtml = `<div>\n${markdownHtml}\n</div>`;
+        $('.blog-list').html(`${currentHtml}\n${newHtml}`);
+      };
+
+      const getMarkdownHtml = (file) => {
+        $.get(`./${file}`, (data) => $.ajax({
+          url: URL,
+          type: TYPE,
+          data,
+          contentType: CONTENT_TYPE,
+          success,
+        }));
+      };
+
+      $(document).ready(function() {
+          analytics();
+          files.map(getMarkdownHtml);
+          $('body').hide();
+          $('body').fadeIn(1000);
+      });
     </script>
 </head>
 <header>
@@ -50,22 +75,9 @@
     </nav>
 </header>
 <body>
-<div class="welcome">
-    <p>Blog</p>
-</div>
-<div>
-  <ul>
-    <li style="display:flex;justify-content:center;">
-      <iframe style="width:800px;height:110vh;" src="/blog/wish-list.md.html"></iframe>
-      <!-- <a href="/blog/wish-list.md.html">
-        <h2>Wish list</h2>
-        <p>December 2017</p>
-      </a> -->
-    </li>
-  </ul>
-</div>
+<div class="blog-list"></div>
 </body>
 <footer>
-    <p class="comment">/* Website designed and developed by Cash. © 2017 */</p>
+  <p class="comment">/* Website designed and developed by Cash. © 2017 */</p>
 </footer>
 </html>

@@ -29,3 +29,4 @@ December 3rd 2017
 - Good beer 🍺
 - Chocolate 🍫
 - Photos of friends and family 🖼
+- [Floor pillow](https://society6.com/product/playmakers_floor-pillow?sku=s6-1031378p60a204v721a206v722#)
