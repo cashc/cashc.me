@@ -10,39 +10,39 @@
     <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan. Extras page for
 some things I find cool and have worked on in the past.">
     <meta name="keywords" content="Cash,Compton,michigan,state,university,msu,software,engineer,developer">
-    <link rel="stylesheet" href="lib/cash.css">
-    <link rel="shortcut icon" href="content/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/cash.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="lib/main.js"></script>
+    <script src="/lib/main.js"></script>
     <script>
         $(document).ready(function() {
             analytics();
-            extras();
+            welcomeFadeIn();
         });
     </script>
 </head>
 <header>
     <nav role="navigation">
-        <a id="home" href="./">
+        <a id="home" href="/">
             <span id="cash">Cash Compton ~/</span>
         </a>
         <ul id="myTopnav" class="topnav">
             <li>
-                <a class="purple selectedPurple" href="extras">extras()</a>
+                <a class="purple selectedPurple" href="/extras">extras()</a>
             </li>
             <li>
-                <a class="yellow" href="contact">contact()</a>
+                <a class="yellow" href="/contact">contact()</a>
             </li>
             <li>
-                <a class="blue" href="resume">résumé()</a>
+                <a class="blue" href="/resume">résumé()</a>
             </li>
             <li>
-                <a id="about" class="green" href="about">about()</a>
+                <a id="about" class="green" href="/about">about()</a>
             </li>
             <li class="icon">
                 <a href="javascript:void(0);" onclick="mobileFriendly()">
-                    <img id="menu" src="content/white-menu-icon.png" alt="menu icon">
+                    <img id="menu" src="/assets/white-menu-icon.png" alt="menu icon">
                 </a>
             </li>
         </ul>
@@ -70,24 +70,31 @@ some things I find cool and have worked on in the past.">
         <p><a class="blue" href="https://youtu.be/Ek7DxLuQkWU">Lionel Messi</a></p>
         <p><a class="yellow" href="https://youtu.be/JtA8gqWA6PE?list=LLy5IXK-ww3zd5EXc8nkQVfQ">Cosmo Kramer</a></p>
         <p><a class="pink" href="https://vimeo.com/152985022">The Present - animation</a></p>
-        <p class="comment">//not by me</p>
+        <p class="comment">// not by me</p>
     </li>
     <li>
         <h2>Games</h2>
         <p><a class="yellow" href="http://slither.io">Slither.io</a></p>
         <p><a class="pink" href="http://tagpro-origin.koalabeast.com/">Tag Pro</a></p>
-        <p class="comment">//not by me</p>
+        <p class="comment">// not by me</p>
     </li>
     <li>
         <h2>Misc</h2>
         <p><a class="purple" href="http://vim.rtorr.com/">Vim Cheat Sheet</a></p>
         <p><a class="green" href="http://i.imgur.com/fq0A8hx.gif">Sorting Algorithms Gif</a></p>
         <p><a class="blue" href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en-US">Must-have Chrome extension</a></p>
-        <p class="comment">//not by me</p>
+        <p class="comment">// not by me</p>
+    </li>
+    <li>
+        <a href="/blog"><h2># Blog</h2></a>
+        <p><a class="purple" href="http://vim.rtorr.com/">Vim Cheat Sheet</a></p>
+        <p><a class="green" href="http://i.imgur.com/fq0A8hx.gif">Sorting Algorithms Gif</a></p>
+        <p><a class="blue" href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab?hl=en-US">Must-have Chrome extension</a></p>
+        <p class="comment">// not by me</p>
     </li>
 </ul>
 </body>
 <footer>
-    <p class="comment">/*Website designed and developed by Cash. © 2017*/</p>
+    <p class="comment">/* Website designed and developed by Cash. © 2017 */</p>
 </footer>
 </html>

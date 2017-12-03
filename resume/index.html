@@ -10,39 +10,40 @@
     <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan. Resume page
 for an overview of Cash's work experience.">
     <meta name="keywords" content="Cash,Compton,michigan,state,university,msu,software,engineer,developer">
-    <link rel="stylesheet" href="lib/cash.css">
-    <link rel="shortcut icon" href="content/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/cash.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="lib/main.js"></script>
+    <script src="/lib/main.js"></script>
     <script>
         $(document).ready(function() {
             analytics();
+            welcomeFadeIn();
             resume();
         });
     </script>
 </head>
 <header>
     <nav role="navigation">
-        <a id="home" href="./">
+        <a id="home" href="/">
             <span id="cash">Cash Compton ~/</span>
         </a>
         <ul id="myTopnav" class="topnav">
             <li>
-                <a class="purple" href="extras">extras()</a>
+                <a class="purple" href="/extras">extras()</a>
             </li>
             <li>
-                <a class="yellow" href="contact">contact()</a>
+                <a class="yellow" href="/contact">contact()</a>
             </li>
             <li>
-                <a class="blue selectedBlue" href="resume">résumé()</a>
+                <a class="blue selectedBlue" href="/resume">résumé()</a>
             </li>
             <li>
-                <a id="about" class="green" href="about">about()</a>
+                <a id="about" class="green" href="/about">about()</a>
             </li>
             <li class="icon">
                 <a href="javascript:void(0);" onclick="mobileFriendly()">
-                    <img id="menu"src="content/white-menu-icon.png" alt="menu icon">
+                    <img id="menu"src="/assets/white-menu-icon.png" alt="menu icon">
                 </a>
             </li>
         </ul>
@@ -54,8 +55,8 @@ for an overview of Cash's work experience.">
 
 <div class="welcome">
     <p>Check out my résumé</p>
-        <a title="Color version of my résumé" id="pdf" class="pdf" href="content/CashCompton17.pdf" target="_blank">
-            <img src="content/pdf-icon.png" alt="PDF" align="middle">
+        <a title="Color version of my résumé" id="pdf" class="pdf" href="/assets/CashCompton17.pdf" target="_blank">
+            <img src="/assets/pdf-icon.png" alt="PDF" align="middle">
             resume.pdf
         </a>
         <span class="pdf">
@@ -63,14 +64,14 @@ for an overview of Cash's work experience.">
             <a title="Expand for black and white version" id="expand" href="./" onclick="return false;">+</a>
         </span>
     <p id="color">
-        <a title="Black and white version" id="pdfSmall" href="content/CashComptonBW17.pdf" target="_blank">
-            <img src="content/pdf-icon.png" alt="PDF" align="middle">
+        <a title="Black and white version" id="pdfSmall" href="/assets/CashComptonBW17.pdf" target="_blank">
+            <img src="/assets/pdf-icon.png" alt="PDF" align="middle">
             resume.pdf
         </a>
         <span class="comment">&nbsp;&nbsp;&nbsp;//B & W</span>
     </p>
     <!-- feel free to view my transcript if you want, I just didn't want it out for all to see
-    <a class="green" href="content/transcript.pdf" target="_blank">transcript.pdf()</a>-->
+    <a class="green" href="/assets/transcript.pdf" target="_blank">transcript.pdf()</a>-->
     <p class="comment">&nbsp;&nbsp;&nbsp; /*click to open PDF in a new tab*/</p>
 </div>
 
