@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0173c6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.blog-list > div {
+  border-bottom: 1px solid black;
+}
