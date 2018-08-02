@@ -1,11 +1,15 @@
-header, footer, body {
-    font-family: Ubuntu;
+body {
+  font-family: Ubuntu;
 }
 
-ul.topnav li.icon {display: none;}
+ul.topnav li.icon {
+  display: none;
+}
 
 @media screen and (max-width:680px) {
-    ul.topnav li {display: none;}
+    ul.topnav li {
+      display: none;
+    }
     ul.topnav li.icon {
         float: right;
         display: inline-block;
@@ -13,19 +17,24 @@ ul.topnav li.icon {display: none;}
 }
 
 @media screen and (max-width:680px) {
-    ul.topnav.responsive {position: relative;}
-    ul.topnav.responsive li.icon {
+    ul.topnav.mobile-friendly {
+      position: relative;
+    }
+    ul.topnav.mobile-friendly li.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    ul.topnav.responsive li {
+    ul.topnav.mobile-friendly li {
         float: none;
         display: inline;
     }
-    ul.topnav.responsive li a {
+    ul.topnav.mobile-friendly li a {
         display: block;
         text-align: left;
+    }
+    ul.topnav.mobile-friendly #about {
+      border-left-style: none;
     }
 }
 
@@ -51,7 +60,7 @@ nav a{
     background-color: rgba(115, 129, 125, 0.45);
     border-right-style: solid;
     border-color: grey;
-    border-right-width: calc(1px);
+    border-right-width: 1px;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -97,15 +106,26 @@ nav #home {
     background-color: #131411;
 }
 
-nav #root {
-    color: #a8a8a8;
-    font-size: 28px;
-}
-
 nav #about {
     border-left-style: solid;
     border-color: grey;
     border-left-width: .1px;
+}
+
+.selectedGreen {
+    background: linear-gradient(to top, rgba(166,226,46,.5), #272822);
+}
+
+.selectedBlue {
+    background: linear-gradient(to top, rgba(102,217,238,.5), #272822);
+}
+
+.selectedYellow {
+    background: linear-gradient(to top, rgba(231,219,116,.5), #272822);
+}
+
+.selectedPurple {
+    background: linear-gradient(to top, rgba(174,129,255,.5), #272822);
 }
 
 .green {
@@ -128,45 +148,64 @@ nav #about {
     color: #F92672;
 }
 
-.selectedGreen {
-    background: linear-gradient(to top, rgba(166,226,46,.5), #272822);
+body {
+  min-height: 100vh;
+  background-color: #272822;
+  margin: 0;
+  padding: 0;
 }
 
-.selectedBlue {
-    background: linear-gradient(to top, rgba(102,217,238,.5), #272822);
-}
-
-.selectedYellow {
-    background: linear-gradient(to top, rgba(231,219,116,.5), #272822);
-}
-
-.selectedPurple {
-    background: linear-gradient(to top, rgba(174,129,255,.5), #272822);
-}
-
-body{
-    background-color: #272822;
-    margin: 0;
-    padding: 0;
-}
-
-.intro {
-    padding-top: calc(8vh);
-    text-align: center;
-    color: #FFFFFF;
-    font-size: calc(8vh + 24px);
+.index {
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome {
-    position: relative;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: calc(2vh + 20px);
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
 }
 
-.welcome a {
-    padding: 8px 0 8px 16px;
-    font-size: 22px;
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 15px;
+  flex-wrap: wrap;
+}
+
+.welcome .column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  font-size: 44px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-button {
+  width: 140px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #66D9EF;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  color: #66D9EF;
+  transition: all 300ms;
+}
+
+.primary-button:hover {
+  background-color: #66D9EF;
+  color: #272822;
 }
 
 #expand {
@@ -190,15 +229,15 @@ body{
 
 #fjord {
     position: relative;
-    width: 99vw;
-    height: calc(99vw/5.01);
+    width: 100%;
+    height: calc(100vw/5.01);
     overflow: hidden;
 }
 
 #lab {
     position: relative;
-    width: 99vw;
-    height: calc(99vw/3.53);
+    width: 100%;
+    height: calc(100vw/3.53);
     overflow: hidden;
 }
 
@@ -210,19 +249,6 @@ body{
 
 .info a, .info p {
     padding: 8px 0 8px 16px;
-    text-decoration: none;
-}
-
-.left {
-    display: table-cell;
-    color: #FFFFFF;
-    padding: 16px 32px 16px 32px;
-    max-width: calc(42vw - 24px);
-    width: auto;
-}
-
-
-.left a, .left p {
     text-decoration: none;
 }
 
@@ -288,10 +314,10 @@ ul.extras li {
     padding: 2px 4vw 2px 4vw;
 }
 
-footer {
-    bottom: 0;
-    text-align: center;
-    width: 99%;
+.footer {
+  text-align: center;
+  width: 100%;
+  margin: 8px 0;
 }
 
 .comment {
