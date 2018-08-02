@@ -40,9 +40,11 @@
               <a id='about' class='green' href='/about'>about()</a>
           </li>
           <li class='icon'>
-              <a href='javascript:void(0);' onclick='mobileFriendly()'>
-                  <img id='menu' src='/assets/white-menu-icon.png' alt='menu icon'>
-              </a>
+            <button id='hamburger-menu' class="hamburger hamburger--3dy" type="button" onclick='openMenu()'>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </li>
       </ul>
   </nav>
@@ -54,7 +56,7 @@
       </div>
     </div>
     <div class='column'>
-      <a href='/resume'><div class='primary-button'>Resumé</div></a>
+      <a href='/resume'><div class='primary-button'>Résumé</div></a>
     </div>
   </div>
   <p class='footer comment'>/* Website designed and developed by Cash. © 2018 */</p>
