@@ -287,7 +287,8 @@ nav #about {
 
 .pdf #expand {
     font-size: 34px;
-    padding: none;
+    padding: 20px;
+    margin-left: 5px;
 }
 
 #overlay {
