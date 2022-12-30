@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
     <title>Cash Compton | Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Cash Compton">
-    <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan. Contact page
-for people to get in touch with Cash.">
-    <meta name="keywords" content="Cash,Compton,michigan,state,university,msu,software,engineer,developer">
-    <link rel="stylesheet" href="/lib/style.css">
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Cash Compton" />
+    <meta
+      name="description"
+      content="Personal site for Cash Compton, a software engineer from Michigan. Contact page
+for people to get in touch with Cash."
+    />
+    <meta
+      name="keywords"
+      content="Cash,Compton,michigan,state,university,msu,software,engineer,developer"
+    />
+    <link rel="stylesheet" href="/lib/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Ubuntu"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="/lib/main.js"></script>
     <script>
-        $(document).ready(function() {
-            analytics();
-            welcomeFadeIn();
-            contact();
-        });
+      $(document).ready(function () {
+        analytics();
+        welcomeFadeIn();
+        contact();
+      });
     </script>
-</head>
-<body>
-  <nav role="navigation">
+  </head>
+  <body>
+    <nav role="navigation">
       <a id="home" href="/">
-          <span id="cash">cashc</span>
+        <span id="cash">cashc</span>
       </a>
       <ul id="top-navigation" class="topnav">
-          <li>
-              <a class="purple" href="/extras">Extras()</a>
-          </li>
-          <li>
-              <a class="yellow selectedYellow" href="/contact">Contact()</a>
-          </li>
-          <li>
-              <a class="blue" href="/resume">Résumé()</a>
-          </li>
-          <li>
-              <a id="about" class="green" href="/about">About()</a>
-          </li>
-          <li class="icon">
-            <button id='hamburger-menu' class="hamburger hamburger--3dy" type="button" onclick='openMenu()'>
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </li>
+        <li>
+          <a class="purple" href="/more">More()</a>
+        </li>
+        <li>
+          <a class="yellow selectedYellow" href="/contact">Contact()</a>
+        </li>
+        <li>
+          <a class="blue" href="/resume">Résumé()</a>
+        </li>
+        <li>
+          <a id="about" class="green" href="/about">About()</a>
+        </li>
+        <li class="icon">
+          <button
+            id="hamburger-menu"
+            class="hamburger hamburger--3dy"
+            type="button"
+            onclick="openMenu()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </li>
       </ul>
-  </nav>
-  <div class="welcome">
-      <img id="lab" src="/assets/cashLab.JPG" alt="Cash in CSE lab"/>
+    </nav>
+    <div class="welcome">
+      <img id="lab" src="/assets/cashLab.JPG" alt="Cash in CSE lab" />
       <p id="overlay">Let's get in touch</p>
-  </div>
-  <div class="info">
+    </div>
+    <div class="info">
       <p></p>
-      <p><a class="yellow" href="mailto:cashscompton@gmail.com?Subject=Hello%20Cash" target="_top">cashscompton@gmail.com</a>
-          <a id="expand" href="./" onclick="return false;">+</a>
+      <p>
+        <a
+          class="yellow"
+          href="mailto:cashscompton@gmail.com?Subject=Hello%20Cash"
+          target="_top"
+          >cashscompton@gmail.com</a
+        >
+        <a id="expand" href="./" onclick="return false;">+</a>
       </p>
-      <p id="msu"><a class="green" href="mailto:compto51@msu.edu?Subject=Hello%20Cash" target="_top">compto51@msu.edu</a></p>
-      <p id="gmail"><a class="purple" href="mailto:cs.cmptn@gmail.com?Subject=Hello%20Cash" target="_top">cs.cmptn@gmail.com</a></p>
-      <p><a class="pink" href="http://www.github.com/cashc">github.com/cashc</a></p>
-      <p><a class="green" href="http://www.linkedin.com/in/cashc">linkedin.com/in/cashc</a></p>
-  </div>
-  <p class="footer comment">/* Website designed and developed by Cash. 2018 */</p>
-</body>
+      <p id="msu">
+        <a
+          class="green"
+          href="mailto:compto51@msu.edu?Subject=Hello%20Cash"
+          target="_top"
+          >compto51@msu.edu</a
+        >
+      </p>
+      <p id="gmail">
+        <a
+          class="purple"
+          href="mailto:cs.cmptn@gmail.com?Subject=Hello%20Cash"
+          target="_top"
+          >cs.cmptn@gmail.com</a
+        >
+      </p>
+      <p>
+        <a class="pink" href="http://www.github.com/cashc">github.com/cashc</a>
+      </p>
+      <p>
+        <a class="green" href="http://www.linkedin.com/in/cashc"
+          >linkedin.com/in/cashc</a
+        >
+      </p>
+    </div>
+    <p class="footer comment">
+      /* Website designed and developed by Cash in 2016. 
+      */
+    </p>
+  </body>
 </html>

@@ -1,102 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
     <title>Cash Compton | About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Cash Compton">
-    <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan. Check this
-page to learn more about what makes Cash tick.">
-    <meta name="keywords" content="about,cash,compton,michigan,state,university,msu,software,engineer,developer">
-    <link rel="stylesheet" href="/lib/style.css">
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Cash Compton" />
+    <meta
+      name="description"
+      content="Personal site for Cash Compton, a software engineer from Michigan. Check this
+page to learn more about what makes Cash tick."
+    />
+    <meta
+      name="keywords"
+      content="about,cash,compton,michigan,state,university,msu,software,engineer,developer"
+    />
+    <link rel="stylesheet" href="/lib/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Ubuntu"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="/lib/main.js"></script>
     <script>
-        $(document).ready(function() {
-            analytics();
-            welcomeFadeIn();
-            about();
-        });
+      $(document).ready(function () {
+        analytics();
+        welcomeFadeIn();
+        about();
+      });
     </script>
-</head>
-<body>
-  <nav role="navigation">
+  </head>
+  <body>
+    <nav role="navigation">
       <a id="home" href="/">
-          <span id="cash">cashc</span>
+        <span id="cash">cashc</span>
       </a>
       <ul id="top-navigation" class="topnav">
-          <li>
-              <a class="purple" href="/extras">Extras()</a>
-          </li>
-          <li>
-              <a class="yellow" href="/contact">Contact()</a>
-          </li>
-          <li>
-              <a class="blue" href="/resume">Résumé()</a>
-          </li>
-          <li>
-              <a id="about" class="green selectedGreen" href="/about">About()</a>
-          </li>
-          <li class="icon">
-            <button id='hamburger-menu' class="hamburger hamburger--3dy" type="button" onclick='openMenu()'>
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </li>
+        <li>
+          <a class="purple" href="/more">More()</a>
+        </li>
+        <li>
+          <a class="yellow" href="/contact">Contact()</a>
+        </li>
+        <li>
+          <a class="blue" href="/resume">Résumé()</a>
+        </li>
+        <li>
+          <a id="about" class="green selectedGreen" href="/about">About()</a>
+        </li>
+        <li class="icon">
+          <button
+            id="hamburger-menu"
+            class="hamburger hamburger--3dy"
+            type="button"
+            onclick="openMenu()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </li>
       </ul>
-  </nav>
-  <div class="welcome">
-      <img id="fjord" src="/assets/cashFjord-small.jpg" alt="Cash in Norway"/>
+    </nav>
+    <div class="welcome">
+      <img id="fjord" src="/assets/cashFjord-small.jpg" alt="Cash in Norway" />
       <p id="overlay">Who is Cash Compton?</p>
-  </div>
-  <div class="info">
-      <p>When I'm not on the computer, I enjoy being active. I like to run, bike, play soccer, and play with my dog.
-        If I've had enough activity for the day, I enjoy more relaxing activities like cooking a nice dinner or reading a book.
+    </div>
+    <div class="info">
+      Updated December 2022
+      <p>
+        I have survived 28 winters, have a degree in Computer Science
+        Engineering, and live in my self-converted camper van with my dog,
+        Quinn. I camp primarily on small farms where I volunteer and in return
+        get to live sustainably, in community, surrounded by amazing people,
+        plants, and animals who teach me the most important lessons of life. My
+        goal is to create harmony between humans and nature.
       </p>
       <p id="com" class="comment">/* click on function to expand */</p>
-      <p><a id="hob" class="yellow" href="./" onclick="return false;">Hobbies()&nbsp&nbsp</a></p>
+      <p>
+        <a id="hob" class="yellow" href="./" onclick="return false;"
+          >Hobbies()&nbsp&nbsp</a
+        >
+      </p>
       <ul id="hobbies">
-          <li>Playing recreational soccer or watching professional soccer</li>
-          <li>Playing with my dog 🐶 Quinn</li>
-          <li>Working on random DIY or computer projects</li>
-          <li>Cooking food, baking baked goods, and brewing kombucha</li>
+        <li>Trail running with my dog</li>
+        <li>Ecstatic dance</li>
+        <li>Farming</li>
+        <li>Playing recreational soccer</li>
+        <li>Working on random DIY projects, usually in my van</li>
+        <li>Writing, creating art, etc.</li>
       </ul>
-      <p><a id="ass" class="pink" href="./" onclick="return false;">Assets()&nbsp&nbsp</a></p>
+      <p>
+        <a id="ass" class="pink" href="./" onclick="return false;"
+          >Places()&nbsp&nbsp</a
+        >
+      </p>
       <ul id="assets">
-          <li>🚲 1980's Peugeot road bike</li>
-          <li>🏍 2017 Yamaha FZ-07</li>
-          <li>🚗 2007 Scion tC manual</li>
-          <li>Computers
-              <ul>
-                  <li>2013 Lenovo Thinkpad T440s</li>
-                  <li>2015 MacBook Pro Retina</li>
-              </ul></li>
+        Places I've called home
+        <li>Eugene, OR</li>
+        <li>Preston, ID</li>
+        <li>Santa Cruz, CA</li>
+        <li>Healdsburg, CA</li>
+        <li>Ann Arbor, MI</li>
+        <li>East Lansing, MI</li>
+        <li>Grand Rapids, MI</li>
       </ul>
-      <p><a id="fav" class="blue" href="./" onclick="return false;">Favorites()&nbsp&nbsp</a></p>
+      <p>
+        <a id="fav" class="blue" href="./" onclick="return false;"
+          >Books()&nbsp&nbsp</a
+        >
+      </p>
       <ul id="favorites">
-          <li>Role models
-              <ul>
-                  <li>Linus Torvalds ⌨️ creator of Linux and Git</li>
-                  <li>Lionel Messi 👑 best footballer</li>
-                  <li>Elon Musk 🚀 creator of Tesla and SpaceX</li>
-                  <li>Paul Atreides ⚔️ main character in book series Dune</li>
-                  <li>Roger Federer 🎾 tennis player</li>
-              </ul>
-          </li>
-          <li>Food for a day
-          <ul>
-              <li>breakfast: sunny side up egg with avocado toast 🍳</li>
-              <li>lunch: burrito 🌯</li>
-              <li>dinner: hippie bowl and 🍺</li>
-              <li>desert: warm chocolate chip cookies</li>
-          </ul></li>
+        <li>The Overstory</li>
+        <li>When Things Fall Apart: Heart Advice for Hard Times</li>
+        <li>The Alchemist</li>
+        <li>The Name of the Wind</li>
+        <li>Braiding Sweetgrass</li>
+        <li>ask me for more... (:</li>
       </ul>
-  </div>
-  <p class="footer comment">/* Website designed and developed by Cash. 2018 */</p>
-</body>
+    </div>
+    <p class="footer comment">
+      /* Website designed and developed by Cash in 2016. */
+    </p>
+  </body>
 </html>

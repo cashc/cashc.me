@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
     <title>Cash Compton | Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Cash Compton">
-    <meta name="description" content="Personal site for Cash Compton, a software engineer from Michigan. Resume page
-for an overview of Cash's work experience.">
-    <meta name="keywords" content="Cash,Compton,michigan,state,university,msu,software,engineer,developer">
-    <link rel="stylesheet" href="/lib/style.css">
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Cash Compton" />
+    <meta
+      name="description"
+      content="Personal site for Cash Compton, a software engineer from Michigan. Resume page
+for an overview of Cash's work experience."
+    />
+    <meta
+      name="keywords"
+      content="Cash,Compton,michigan,state,university,msu,software,engineer,developer"
+    />
+    <link rel="stylesheet" href="/lib/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Ubuntu"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="/lib/main.js"></script>
     <script>
-        $(document).ready(function() {
-            analytics();
-            welcomeFadeIn();
-            resume();
-        });
+      $(document).ready(function () {
+        analytics();
+        welcomeFadeIn();
+        resume();
+      });
     </script>
-</head>
-<body>
-  <nav role="navigation">
-    <a id="home" href="/">
-      <span id="cash">cashc</span>
-    </a>
-    <ul id="top-navigation" class="topnav">
-      <li>
-        <a class="purple" href="/extras">Extras()</a>
-      </li>
-      <li>
-        <a class="yellow" href="/contact">Contact()</a>
-      </li>
-      <li>
-        <a class="blue selectedBlue" href="/resume">Résumé()</a>
-      </li>
-      <li>
-        <a id="about" class="green" href="/about">About()</a>
-      </li>
-      <li class="icon">
-        <button id='hamburger-menu' class="hamburger hamburger--3dy" type="button" onclick='openMenu()'>
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-  <div class="welcome">
+  </head>
+  <body>
+    <nav role="navigation">
+      <a id="home" href="/">
+        <span id="cash">cashc</span>
+      </a>
+      <ul id="top-navigation" class="topnav">
+        <li>
+          <a class="purple" href="/more">More()</a>
+        </li>
+        <li>
+          <a class="yellow" href="/contact">Contact()</a>
+        </li>
+        <li>
+          <a class="blue selectedBlue" href="/resume">Résumé()</a>
+        </li>
+        <li>
+          <a id="about" class="green" href="/about">About()</a>
+        </li>
+        <li class="icon">
+          <button
+            id="hamburger-menu"
+            class="hamburger hamburger--3dy"
+            type="button"
+            onclick="openMenu()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="welcome">
       <p>Check out my résumé</p>
-          <a title="Color version of my résumé" id="pdf" class="pdf" href="/assets/CashCompton21.pdf" target="_blank">
-              <img src="/assets/pdf-icon.png" alt="PDF" align="middle">
-              resume.pdf
-          </a>
-          <!-- <span class="pdf">
+      <a
+        title="Color version of my résumé"
+        id="pdf"
+        class="pdf"
+        href="/assets/CashCompton21.pdf"
+        target="_blank"
+      >
+        <img src="/assets/pdf-icon.png" alt="PDF" align="middle" />
+        resume.pdf
+      </a>
+      <!-- <span class="pdf">
             <a title="Expand for black and white version" id="expand" href="./" onclick="return false;">+</a>
           </span>
       <p id="color">
@@ -68,115 +89,262 @@ for an overview of Cash's work experience.">
       </p> -->
       <!-- feel free to view my transcript if you want, I just didn't want it out for all to see
       <a class="green" href="/assets/transcript.pdf" target="_blank">transcript.pdf()</a>-->
-      <p class="comment">&nbsp;&nbsp;&nbsp; /* click to open PDF in a new tab */</p>
-  </div>
+      <p class="comment">
+        &nbsp;&nbsp;&nbsp; /* click to open PDF in a new tab */
+      </p>
+    </div>
 
-  <div class="info">
-      <hr class="purple">
+    <div class="info">
+      <hr class="purple" />
       <ul class="resume">
-          <li>I’m a full stack software engineer. I have over 6 years of experience working in the tech industry, building beautiful, robust,
-            and scalable web and mobile apps that have been used by millions of people. If you’re in need of software that helps fight important
-            issues in the world today like climate change, mental illness, or racial inequality, please reach out- I may be interested in helping.</li>
+        <li>
+          I’m a full stack software engineer. I have over 6 years of experience
+          working in the tech industry, building beautiful, robust, and scalable
+          web and mobile apps that have been used by millions of people. If
+          you’re in need of software that helps fight important issues in the
+          world today like climate change, mental illness, or racial inequality,
+          please reach out- I may be interested in helping.
+        </li>
       </ul>
       <p class="blue">Experience</p>
       <ul class="resume">
-        <li><span class="bold">Very, Senior Software Engineer</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Remote,
-          Winter 2019 - Summer 2021</span></li>
-          <li class="indented">Worked as a full stack engineer at this consultancy, specializing in IoT software. I built multiple
-            mobile and web applications from the ground up, writing clean, scalable code in large codebases. My primary role was on the front end,
-            where I specialized in building mobile apps with React Native/Typescript and Swift. I also worked on the back-end, primarily writing
-            Phoenix APIs in Elixir. I built 5 large mobile apps that are now available in the Android and iOS App Stores.</li>
-          <li><span class="bold">SkySpecs, Web Application Developer</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Ann Arbor,
-              MI, Summer 2018 - Present</span></li>
-          <li class="indented">Full-stack developer at a startup that uses drones to autonomously inspect wind turbines. I work on the
-            React front-end and Node back-end of a web app that stores a massive amount of wind farm data in the form of damage records, turbine
-            photos, and repair information to keep customers informed on the status of their farm.</li>
-          <li><span class="bold">Trove AI, Software Engineer</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Ann Arbor,
-              MI, Summer 2017 - Summer 2018</span></li>
-          <li class="indented">Worked on the front-end web team at this startup making email and professional networking software. I was involved
-            in the design of the product as well as the development of the large React + Redux codebase. We shipped to five platforms
-            and maintained high-quality code thanks to mandatory code reviews and high test coverage.</li>
-            <li class="indented"><a href="https://trove.com">Trove.com</a></li>
-          <li><span class="bold">Ford Motor Company, IT Ford College Graduate</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Deaborn,
-              MI, Summer 2016 - present</span></li>
-          <li class="indented">Occupied both developer and business analyst roles in an Agile Software Development team. I
-              pioneered a suite of tools to automate and expedite deployments of software upgrades in vehicle
-              assembly plants, which cuts plant down-time by 1/4. I also created a web app using Node.js that
-              monitors and controls JVMs in QC and prod. environments.</li>
-          <li><span class="bold">MSU Capstone - Team Amazon, Team Member</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">East Lansing,
-              MI, Spring 2016</span></li>
-          <li class="indented">Senior Capstone course working for Amazon. Using AWS, we developed an improved Twitch.tv streaming
-              website with Comment Ranking and Smart Advertisement functionality. I created a Google Chrome
-              Extension and worked on the frontend, utilizing HTML/CSS and Javascript, as well as the backend
-              using PHP, a MySQL database, and various APIs.</li>
-          <li class="indented"><a href="https://cse.msu.edu/~cse498/2016-01/projects/amazon/">Project summary</a></li>
-          <li><span class="bold">Smart Homes and Smart Offices, Programming Intern</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Okemos,
-              MI, Spring 2015 - Spring 2016</span></li>
-          <li class="indented">Internship that turned into a part-time job during the school year. I managed and customized CRM software in the
-              form of a Microsoft Access DB, led multiple data mining projects using .NET to increase sales, built
-              a custom SharePoint site, and helped manage various WordPress sites. I also trained a new intern who
-              worked beneath me and was my successor.</li>
-          <li class="indented"><a href="https://smartofficesandsmarthomes.com/">SmartOfficesAndSmartHomes.com</a></li>
-          <li><span class="bold">Digital Humities and Literary Cognition Research Lab, Programmer </span>&nbsp;&nbsp;&nbsp;
-              &nbsp;<span class="bold1">East Lansing, MI, Fall 2014</span></li>
-          <li class="indented">Working on a team trying to better understand what happens inside the brain when people read, I used
-              Python to create a graphical representation of eye-tracking data in order to visualize patterns in
-              subjects’ eye movements.</li>
-          <li><span class="bold">Herman Miller Inc, Manufacturing Operator</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">
-              Holland, MI, Summer 2014</span></li>
-          <li class="indented">In a fast-paced furniture manufacturing plant, I made sure the assembly line never stopped by
-              troubleshooting problems, verifying orders, and adjusting the pace of production to meet quotas.</li>
+        <li>
+          <span class="bold">Independent Contractor</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Remote, Summer 2021 - present</span
+          >
+        </li>
+        <li class="indented">
+          Full stack software engineer working only for select clients.
+        </li>
+        <li>
+          <span class="bold">Very, Senior Software Engineer</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Remote, Winter 2019 - Summer 2021</span
+          >
+        </li>
+        <li class="indented">
+          Worked as a full stack engineer at this consultancy, specializing in
+          IoT software. I built multiple mobile and web applications from the
+          ground up, writing clean, scalable code in large codebases. My primary
+          role was on the front end, where I specialized in building mobile apps
+          with React Native/Typescript and Swift. I also worked on the back-end,
+          primarily writing Phoenix APIs in Elixir. I built 5 large mobile apps
+          that are now available in the Android and iOS App Stores.
+        </li>
+        <li>
+          <span class="bold">SkySpecs, Web Application Developer</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Ann Arbor, MI, Summer 2018 - Winter 2019</span
+          >
+        </li>
+        <li class="indented">
+          Full-stack developer at a startup that uses drones to autonomously
+          inspect wind turbines. I work on the React front-end and Node back-end
+          of a web app that stores a massive amount of wind farm data in the
+          form of damage records, turbine photos, and repair information to keep
+          customers informed on the status of their farm.
+        </li>
+        <li>
+          <span class="bold">Trove AI, Software Engineer</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Ann Arbor, MI, Summer 2017 - Summer 2018</span
+          >
+        </li>
+        <li class="indented">
+          Worked on the front-end web team at this startup making email and
+          professional networking software. I was involved in the design of the
+          product as well as the development of the large React + Redux
+          codebase. We shipped to five platforms and maintained high-quality
+          code thanks to mandatory code reviews and high test coverage.
+        </li>
+        <li class="indented"><a href="https://trove.com">Trove.com</a></li>
+        <li>
+          <span class="bold">Ford Motor Company, IT Ford College Graduate</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Deaborn, MI, Summer 2016 - present</span
+          >
+        </li>
+        <li class="indented">
+          Occupied both developer and business analyst roles in an Agile
+          Software Development team. I pioneered a suite of tools to automate
+          and expedite deployments of software upgrades in vehicle assembly
+          plants, which cuts plant down-time by 1/4. I also created a web app
+          using Node.js that monitors and controls JVMs in QC and prod.
+          environments.
+        </li>
+        <li>
+          <span class="bold">MSU Capstone - Team Amazon, Team Member</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >East Lansing, MI, Spring 2016</span
+          >
+        </li>
+        <li class="indented">
+          Senior Capstone course working for Amazon. Using AWS, we developed an
+          improved Twitch.tv streaming website with Comment Ranking and Smart
+          Advertisement functionality. I created a Google Chrome Extension and
+          worked on the frontend, utilizing HTML/CSS and Javascript, as well as
+          the backend using PHP, a MySQL database, and various APIs.
+        </li>
+        <li class="indented">
+          <a href="https://cse.msu.edu/~cse498/2016-01/projects/amazon/"
+            >Project summary</a
+          >
+        </li>
+        <li>
+          <span class="bold"
+            >Smart Homes and Smart Offices, Programming Intern</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Okemos, MI, Spring 2015 - Spring 2016</span
+          >
+        </li>
+        <li class="indented">
+          Internship that turned into a part-time job during the school year. I
+          managed and customized CRM software in the form of a Microsoft Access
+          DB, led multiple data mining projects using .NET to increase sales,
+          built a custom SharePoint site, and helped manage various WordPress
+          sites. I also trained a new intern who worked beneath me and was my
+          successor.
+        </li>
+        <li class="indented">
+          <a href="https://smartofficesandsmarthomes.com/"
+            >SmartOfficesAndSmartHomes.com</a
+          >
+        </li>
+        <li>
+          <span class="bold"
+            >Digital Humities and Literary Cognition Research Lab, Programmer </span
+          >&nbsp;&nbsp;&nbsp; &nbsp;<span class="bold1"
+            >East Lansing, MI, Fall 2014</span
+          >
+        </li>
+        <li class="indented">
+          Working on a team trying to better understand what happens inside the
+          brain when people read, I used Python to create a graphical
+          representation of eye-tracking data in order to visualize patterns in
+          subjects’ eye movements.
+        </li>
+        <li>
+          <span class="bold">Herman Miller Inc, Manufacturing Operator</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">
+            Holland, MI, Summer 2014</span
+          >
+        </li>
+        <li class="indented">
+          In a fast-paced furniture manufacturing plant, I made sure the
+          assembly line never stopped by troubleshooting problems, verifying
+          orders, and adjusting the pace of production to meet quotas.
+        </li>
       </ul>
       <p class="blue">Education</p>
       <ul class="resume">
-          <li><span class="bold">Hacker Fellows</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Detroit,
-              MI, Summer 2017 - Summer 2018</span></li>
-          <li class="indented">Elite fellowship program where I was part of a 15-person cohort that completed a 5-week software and entrepreneurship bootcamp.</li>
-          <li class="indented"><a href="https://www.hackerfellows.com/">HackerFellows.com</a></li>
-          <li><span class="bold">Michigan State University</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">East Lansing,
-              MI, Fall 2012 - Spring 2016</span></li>
-          <li class="indented">B.S. Computer Science and Engineering with Business cognate. Graduated Spring 2016.</li>
-          <li><span class="bold">Denmark Technical University</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Lyngby,
-              Denmark, Spring 2015</span></li>
-          <li class="indented">Semester abroad where I took masters level CS courses including AI, Databases, and Machine Learning and Data Mining.</li>
-          <li><span class="bold">Catholic Central High School</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1">Grand Rapids,
-              MI, Fall 2008 - Spring 2012</span>
-          </li>
+        <li>
+          <span class="bold">Hacker Fellows</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+            class="bold1"
+            >Detroit, MI, Summer 2017 - Summer 2018</span
+          >
+        </li>
+        <li class="indented">
+          Elite fellowship program where I was part of a 15-person cohort that
+          completed a 5-week software and entrepreneurship bootcamp.
+        </li>
+        <li class="indented">
+          <a href="https://www.hackerfellows.com/">HackerFellows.com</a>
+        </li>
+        <li>
+          <span class="bold">Michigan State University</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >East Lansing, MI, Fall 2012 - Spring 2016</span
+          >
+        </li>
+        <li class="indented">
+          B.S. Computer Science and Engineering with Business cognate. Graduated
+          Spring 2016.
+        </li>
+        <li>
+          <span class="bold">Denmark Technical University</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Lyngby, Denmark, Spring 2015</span
+          >
+        </li>
+        <li class="indented">
+          Semester abroad where I took masters level CS courses including AI,
+          Databases, and Machine Learning and Data Mining.
+        </li>
+        <li>
+          <span class="bold">Catholic Central High School</span
+          >&nbsp;&nbsp;&nbsp;&nbsp;<span class="bold1"
+            >Grand Rapids, MI, Fall 2008 - Spring 2012</span
+          >
+        </li>
       </ul>
       <p class="blue">Skills</p>
       <table class="skills">
-          <tr>
-              <td>JavaScript</td><td>PHP</td><td>C</td>
-          </tr>
-          <tr>
-              <td>Python</td><td>Ruby</td><td>C++</td>
-          </tr>
-          <tr>
-              <td>Node.js</td><td>SQL</td><td>Java</td>
-          </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>PHP</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Ruby</td>
+          <td>C++</td>
+        </tr>
+        <tr>
+          <td>Node.js</td>
+          <td>SQL</td>
+          <td>Java</td>
+        </tr>
       </table>
       <p class="blue">Hackathons</p>
       <ul class="resume">
-        <li>First place at Startup Weekend Grand Rapids 2017 with Dump.
-        <li class="indented">Find a place to dump your car using the mobile app Dump, the AirBnB for parking. Pitched the idea
-          and founded the team.</li>
+        <li>First place at Startup Weekend Grand Rapids 2017 with Dump.</li>
+        <li class="indented">
+          Find a place to dump your car using the mobile app Dump, the AirBnB
+          for parking. Pitched the idea and founded the team.
         </li>
-        <li class="indented"><a href="https://medium.com/@hackerfellows/dump-wins-grand-rapids-startup-weekend-e66a74713546#.60uy3bjy0">Blog Post</a></li>
+        <li class="indented">
+          <a
+            href="https://medium.com/@hackerfellows/dump-wins-grand-rapids-startup-weekend-e66a74713546#.60uy3bjy0"
+            >Blog Post</a
+          >
+        </li>
         <li>Second place at Ford STEAM Hack 2016 with G@mePlan.</li>
-        <li class="indented">Allow students and teachers to connect using GamePl@n, an app that strengthens
-          a school’s community and empowers students. Our four person team consisting of one teacher and three engineers continued development
-          after the hackathon. I built the back-end in the form of a Python Flask API for use with the Angular 2 front-end.</li>
-          <li class="indented"><a href="https://www.detroitnews.com/story/news/education/2016/10/02/dropout-prevention-conference-descends-detroit/91452868/">Article</a></li>
-        <li>Fourth place and most viable at Catalyst Innovation Competition with Smart Sun Visor.</li>
-        <li class="indented">Dynamically block blinding sunlight while driving,
-          using the Smart Sun Visor. Used Arduino with accelerometer and light sensor to know when to activate Smart Tint sun visor.</li>
+        <li class="indented">
+          Allow students and teachers to connect using GamePl@n, an app that
+          strengthens a school’s community and empowers students. Our four
+          person team consisting of one teacher and three engineers continued
+          development after the hackathon. I built the back-end in the form of a
+          Python Flask API for use with the Angular 2 front-end.
+        </li>
+        <li class="indented">
+          <a
+            href="https://www.detroitnews.com/story/news/education/2016/10/02/dropout-prevention-conference-descends-detroit/91452868/"
+            >Article</a
+          >
+        </li>
+        <li>
+          Fourth place and most viable at Catalyst Innovation Competition with
+          Smart Sun Visor.
+        </li>
+        <li class="indented">
+          Dynamically block blinding sunlight while driving, using the Smart Sun
+          Visor. Used Arduino with accelerometer and light sensor to know when
+          to activate Smart Tint sun visor.
+        </li>
       </ul>
       <p class="pink">Personal</p>
       <ul class="resume">
-          <li>When I'm not coding, I enjoy being active. I run, ride my bike, or play soccer almost everyday. My biggest passion is soccer, which I spend a lot of time
-            playing and watching. To relax, I like to cuddle up with my dog Quinn and watch Netflix or read a book.</li>
+        <li>
+          When I'm not coding, I enjoy being active. I run, ride my bike, or
+          play soccer almost everyday. My biggest passion is soccer, which I
+          spend a lot of time playing and watching. To relax, I like to cuddle
+          up with my dog Quinn and watch Netflix or read a book.
+        </li>
       </ul>
-  </div>
-  <p class="footer comment">/* Website designed and developed by Cash. 2018 */</p>
-</body>
+    </div>
+    <p class="footer comment">
+      /* Website designed and developed by Cash in 2016. */
+    </p>
+  </body>
 </html>
